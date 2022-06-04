@@ -12,8 +12,8 @@ import lombok.Setter;
 @Entity
 public class Habilidades {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long idHab;
     
     @NotNull
     private String porcentaje;
@@ -25,7 +25,7 @@ public class Habilidades {
     }
 
     public Habilidades(Long id, String porcentaje, String url) {
-        this.id = id;
+        this.idHab = idHab;
         this.porcentaje = porcentaje;
         this.url = url;
     }

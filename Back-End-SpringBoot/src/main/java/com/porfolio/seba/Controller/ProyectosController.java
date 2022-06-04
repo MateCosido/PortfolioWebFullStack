@@ -10,31 +10,33 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/proyectos")
 public class ProyectosController {
     @Autowired IProyectosService iproyectosService;
     
-    @GetMapping("proyectos/traer")
+    @GetMapping("/traer")
     public List<Proyectos> getProyectos(){
         return iproyectosService.getProyectos();
     }
     
-    @PostMapping("/proyectos/crear")
+    @PostMapping("/crear")
     public String createProyectos(@RequestBody Proyectos proyectos){
         iproyectosService.saveProyectos(proyectos);
         return "El Proyecto fue agregado";
     }
     
-    @DeleteMapping("/proyectos/borrar/{id}")
+    @DeleteMapping("/borrar/{id}")
     public String deleteProyectos(@PathVariable Long id){
         iproyectosService.deleteProyectos(id);
         return "El Proyecto fue borrado";
     }
     
-    @PutMapping("/proyectos/editar/{id}")
+    @PutMapping("/editar/{id}")
     public Proyectos editProyectos(@PathVariable Long id,
                                    @RequestParam("fecha") String nuevaFecha,
                                    @RequestParam("descripcion") String nuevaDescripcion){

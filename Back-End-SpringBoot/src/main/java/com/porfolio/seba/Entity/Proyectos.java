@@ -13,8 +13,8 @@ import lombok.Setter;
 public class Proyectos {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long idProy;
     
     @Basic
     private String fecha;
@@ -25,8 +25,8 @@ public class Proyectos {
     public Proyectos() {
     }
 
-    public Proyectos(Long id, String fecha, String descripcion) {
-        this.id = id;
+    public Proyectos(Long idProy, String fecha, String descripcion) {
+        this.idProy = idProy;
         this.fecha = fecha;
         this.descripcion = descripcion;
     }

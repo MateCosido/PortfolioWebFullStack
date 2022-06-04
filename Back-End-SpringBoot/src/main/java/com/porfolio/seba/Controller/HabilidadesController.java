@@ -10,31 +10,33 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/habilidades")
 public class HabilidadesController {
     @Autowired IHabilidadesService ihabilidadesService;
     
-    @GetMapping("habilidades/traer")
+    @GetMapping("/traer")
     public List<Habilidades> getHabilidades(){
         return ihabilidadesService.getHabilidades();
     }
     
-    @PostMapping("/habilidades/crear")
+    @PostMapping("/crear")
     public String createHabilidades(@RequestBody Habilidades habilidades){
         ihabilidadesService.saveHabilidades(habilidades);
         return "La Habilidad fue cargada";
     }
     
-    @DeleteMapping("/habilidades/borrar/{id}")
+    @DeleteMapping("/borrar/{id}")
     public String deleteHabilidades(@PathVariable Long id){
         ihabilidadesService.deleteHabilidades(id);
         return "La Habilidad fue borrada";
     }
     
-    @PutMapping("/habilidades/editar/{id}")
+    @PutMapping("/editar/{id}")
     public Habilidades editHabilidades(@PathVariable Long id,
                                        @RequestParam("porcentaje") String nuevoPorcentaje,
                                        @RequestParam("url") String nuevaUrl){
