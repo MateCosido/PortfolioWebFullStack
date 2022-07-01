@@ -16,7 +16,7 @@ export class InterceptorService implements HttpInterceptor {
    var currentUser=this.autenticacionServicio.UsuarioAutenticado;
    if(currentUser && currentUser.accessToken)
    {
-     req=req.clone({
+     reqInt=req.clone({
        setHeaders:{
        Authorization: 'Bearer ${currentUser.accesToken}'
        }
