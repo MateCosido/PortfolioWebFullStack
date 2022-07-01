@@ -16,12 +16,12 @@ export class IniciarSesionComponent implements OnInit {
       {
 /* formulario reactivo esta asociado al modelo (formato o JSON) del que espera los datos desde nuestra API */
 /* Completar abajo deviceId - deviceType - notificationToken con datos de la API  17:52*/
-email:['',[Validators.required,Validators.email]],
+        email:['',[Validators.required,Validators.email]],
         password:['',[Validators.required,Validators.minLength(8)]],
         deviceInfo:this.formBuilder.group({
-          deviceId: [""],
+          /*deviceId: [""],
           deviceType: [""],
-          notificationToken:[""]
+          notificationToken:[""]*/
         })
       }
     )
