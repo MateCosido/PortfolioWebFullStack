@@ -1,0 +1,7 @@
+.imglogo{
+    z-index: 1;
+    position: absolute;
+    top: 275px;
+    left: 3.4px;
+    border-radius: 25px;
+}
