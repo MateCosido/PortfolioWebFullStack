@@ -11,7 +11,7 @@ import { NuevoUsuario } from '../model/nuevoUsuario';
 })
 export class AuthService {
 /*------- URL API------------------*/
-  private apiServerUrl= 'http://localhost:8080/auth/'
+  private apiServerUrl= 'https://back-end-java-springboot.herokuapp.com/auth/'
 
 
   constructor(private httpClient: HttpClient) { }
