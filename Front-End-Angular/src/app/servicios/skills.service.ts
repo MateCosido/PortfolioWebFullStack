@@ -8,7 +8,7 @@ import { Skills } from '../model/skills';
 })
 export class SkillsService {
 
-  private apiServerUrl='http://localhost:8080'
+  private apiServerUrl='https://back-end-java-springboot.herokuapp.com'
 
   constructor(private http:HttpClient) { }
 

@@ -9,7 +9,7 @@ import { Experiencia } from '../model/experiencia';
 })
 export class ExperienciaService {
 
-  private apiServerUrl='http://localhost:8080'
+  private apiServerUrl='https://back-end-java-springboot.herokuapp.com'
 
   constructor(private http:HttpClient) { }
 

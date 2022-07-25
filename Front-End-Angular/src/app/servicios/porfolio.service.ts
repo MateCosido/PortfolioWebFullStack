@@ -10,7 +10,7 @@ import { Persona } from '../model/persona';
 })
 export class PorfolioService {
 /*ACA VA URL API*/
-  private apiServerUrl= 'http://localhost:8080'
+  private apiServerUrl= 'https://back-end-java-springboot.herokuapp.com'
 
   constructor(private http:HttpClient) { }
 
