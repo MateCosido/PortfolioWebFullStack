@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/mi-primera-app",
+    "public": "dist/FRONT-END-ANGULAR",
     "ignore": [
       "firebase.json",
       "**/.*",
