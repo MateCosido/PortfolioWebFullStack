@@ -8,7 +8,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-  private apiServerUrl='http://https://back-end-java-springboot.herokuapp.com'
+  private apiServerUrl='https://back-end-java-springboot.herokuapp.com'
 
   
   constructor(private http: HttpClient) { }
