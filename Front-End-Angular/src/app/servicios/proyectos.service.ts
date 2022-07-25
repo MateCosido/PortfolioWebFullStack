@@ -8,7 +8,7 @@ import { Proyectos } from '../model/proyectos';
 })
 export class ProyectosService {
 
-  private apiServerUrl='http://localhost:8080'
+  private apiServerUrl='https://back-end-java-springboot.herokuapp.com'
 
   constructor(private http:HttpClient) { }
 

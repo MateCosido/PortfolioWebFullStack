@@ -7,7 +7,7 @@ import { Persona } from '../model/persona';
   providedIn: 'root'
 })
 export class PersonaService {
-  private apiServerUrl='http://localhost:8080'
+  private apiServerUrl='https://back-end-java-springboot.herokuapp.com'
 
   constructor(private http: HttpClient) { }
 //Observable hace todas las peticiones asincronas
