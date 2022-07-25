@@ -1,16 +1,10 @@
 {
   "hosting": {
-    "public": "dist/Front-End-Angular",
+    "public": "dist/mi-primera-app",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
   }
 }
