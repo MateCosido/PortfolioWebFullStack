@@ -1,5 +1,0 @@
-En base al prototipo creado en FIGMA, crear la maqueta con HTML+CSS+Bootstrap
-
-Utilizando Visual Studio Code cree la maqueta utilizando HTML+CSS+Bootstrap.
-Tiempo estimado: 3 días
-Tiempo real utilizado: 6 días.
